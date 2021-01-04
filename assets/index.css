@@ -1,0 +1,204 @@
+.main {
+   height: 100vh;
+   perspective: 2px;
+   overflow-x: hidden;
+ }
+ 
+ .section {
+   font-family: var(--bs-font-sans-serif);
+
+   position: relative;
+   display: flex;
+
+   min-height: 100vh;
+   /*height: 80vh;
+   align-items: center;
+   justify-content: center;
+   font-size: 40px;
+   text-transform: uppercase;
+   font-weight: bold;
+   */
+ }
+ 
+ /* Different background colors for demo purpose */
+ .static-one {
+   background-color: var(--purple) !important;
+   height:90vh;
+ }
+ 
+ .static-two {
+   background-color:var(--purple);
+ }
+ 
+ .static-three {
+   background-color:var(--purple);
+ }
+ 
+ .parallax::after {
+   content: '';
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   filter: opacity(0.2);
+   background-size: cover;
+   transform: translateZ(-1px) scale(1.7);
+   z-index: -1;
+ }
+ 
+ /* Different background images */
+ .parallax-one::after {
+   
+   background-image: url(https://cms.niklas-stephan.de/storage/uploads/2021/01/02/5ff0d251d6d60index_bg_1.webp);
+  
+ }
+ 
+ .parallax-two::after {
+   background-image: url(https://cms.niklas-stephan.de/storage/uploads/2021/01/02/5ff0d251cbb2eindex_bg_2.webp);
+ }
+
+ .h-100 {
+   min-height: 100vh !important;
+   height: inherit;
+ }
+ 
+ .btn-link {
+   font-weight: 400;
+   color: inherit;
+   text-decoration: none; 
+ }
+ 
+ 
+ .img-port {
+   filter: contrast(70%);
+   -webkit-filter: contrast(70%);
+ }
+ 
+ .img-mirror {
+   -webkit-transform: scaleX(-1);
+   transform: scaleX(-1);
+ }
+ 
+ .carousel-item {
+ 
+   min-height: 400px;
+ }
+ 
+ .card {
+   background:transparent;
+   color:white;
+   border: 0;
+ }
+ 
+ .card-header {
+ 
+   background-color: transparent;
+   border-bottom: 0;
+ }
+ .btn-check:focus+.btn, .btn:focus {
+ 
+   box-shadow: 0 0 black;
+ }
+.btn-timeline:hover {
+   color: white;
+   text-decoration: underline;
+ }
+ 
+ .card:before {
+   content: "";
+   width: 1px;
+   height: 100%;
+   background: white;
+   left: 31px;
+   top: 0;
+   position: absolute;
+ }
+ 
+ .timeline-icon {
+   background: var(--purple);
+   color: white;
+   border:2px white solid;
+   width: 50px;
+   height: 50px;
+   position: absolute;
+   top: 0;
+   overflow: hidden;
+   margin-left: -23px;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   border-radius: 50%;
+ }
+ 
+ .contactSvg {
+ 
+     font-size: 24px;
+     margin-right: 8px;
+ 
+ }
+ 
+ .footer {
+   position: sticky;
+   top:100%;
+   left: 0px;
+   bottom: 0px;
+   padding-bottom: 16px;
+ 
+   font-size:16px;
+   margin: 0;
+ }
+ 
+ .modal-content {
+   color:white;
+   background: #000000b3;
+ }
+ 
+ .cd-lang-nav {
+   position: absolute;
+   z-index: 1;
+   right: 3%;
+   top: 5%;
+   bottom: auto;
+   -webkit-transform: translateY(-50%);
+   -moz-transform: translateY(-50%);
+   -ms-transform: translateY(-50%);
+   -o-transform: translateY(-50%);
+   transform: translateY(-50%);
+ 
+ }
+ 
+ /*
+ .cd-lang-nav a.lang-prev {
+   -webkit-transform: rotate(180deg);
+   -moz-transform: rotate(180deg);
+   -ms-transform: rotate(180deg);
+   -o-transform: rotate(180deg);
+   transform: rotate(180deg);
+   margin-bottom: 10px;
+ }
+ */
+ 
+ .cd-lang-nav a {
+   border: 2px solid white;
+   display: flex;
+   text-align: center;
+   white-space: nowrap;
+   height: 40px;
+   width: 136px;
+   align-items: center;
+   padding-left: 4px;
+  
+   /*overflow: hidden;
+   text-indent: 100%;
+  
+   background: url(../img/cd-icon-arrow.svg) no-repeat center center;*/
+ }
+ 
+ .cd-lang-nav a:hover {
+   color:white !important;
+ }
+
+ .carousel-svg {
+   border: 1px solid white;
+ }
