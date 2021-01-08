@@ -1,4 +1,3 @@
-init();
 console.log(`%c
 MMMMMMMMMMMm++mMMMMMMMMMMM
 MMMMMMMMMm+:  :+mMMMMMMMMM
@@ -14,6 +13,5 @@ MMMMMMMm+:      :+mMMMMMMM
 MMMMMMMMMm+:  :+mMMMMMMMMM
 MMMMMMMMMMMm++mMMMMMMMMMMM
 `,"color: #8945f8;font-family:monospace");
-console.log("%cWelcome to niklas-stephan.de - v2021.1.0", "color: #8945f8;");
+console.log("%cWelcome to niklas-stephan.de - v2021.1.1", "color: #8945f8;");
 console.log("Client Date: "+new Date());
-/*injectBuild*/

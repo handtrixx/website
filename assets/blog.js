@@ -41,7 +41,6 @@ function onButtonGroupClick(event) {
  }
  var iso = new Isotope('.grid', {
    itemSelector: '.element-item',
-   layoutMode: 'fitRows',
    getSortData: {
      name: '.name',
      date: '.date'
