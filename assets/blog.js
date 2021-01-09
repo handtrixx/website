@@ -49,5 +49,45 @@ function onButtonGroupClick(event) {
    transitionDuration: '0.8s'
  });
  
+ function filterTag(tag) { 
+  document.getElementById("filterInput").value = tag;
+  document.getElementById("filterInput").dispatchEvent(new Event('keyup'));
+}
+
+function filterClear() {
+  document.getElementById("filterInput").value = '';
+  document.getElementById("filterInput").dispatchEvent(new Event('keyup'));
+}
  
+function clientDate () {
+  const currentTimestamp = Date.now();
+  var array = document.getElementsByClassName('clientDate').length;
+
+  var i;
+  for (i = 0; i < array; i++) {
+    var unixTimestamp = document.getElementsByClassName('clientDate')[i].innerHTML;
+    unixTimestamp = unixTimestamp * 1000;
+    const diff = currentTimestamp - unixTimestamp;
+    var seconds = diff / 1000;
+    var minutes = seconds / 60;
+    var hours = minutes / 60;
+    var days = hours / 24;
+    if (days < 1) {
+      if (hours < 1) {
+        difference = "wenigen Minuten";
+      } else {
+        difference = Math.round(hours)+" Stunden";
+      }
+      
+    } else {
+      difference = Math.round(days)+ " Tagen";
+    }
+    document.getElementsByClassName('clientDate')[i].innerHTML = "vor "+difference;
+    
+  }
+}
+
+
+clientDate();
+
  setTimeout(function () { iso.layout(); }, 750);

@@ -5,6 +5,7 @@
   <!--InjectPageMeta-->
   <!--InjectCSS-->
 </head>
+
 <body class="main">
   <nav class="navbar navbar-expand navbar-dark bg-purple py-4">
     <div class="container">
@@ -19,7 +20,7 @@
               d="M456 1456 c-409 -416 -456 -467 -456 -496 0 -28 47 -79 458 -496 l457 -464 45 0 45 1 458 464 c441 447 458 466 455 499 -3 30 -56 88 -456 495 l-454 461 -48 0 -47 0 -457 -464z m961 -34 l451 -459 -226 -233 -227 -233 -5 374 c-5 364 -6 375 -28 425 -42 92 -120 145 -243 165 -116 19 -229 -18 -327 -106 l-52 -47 0 66 0 66 -110 0 c-60 0 -110 3 -110 8 0 10 409 432 419 432 4 0 210 -206 458 -458z m-897 -464 l-1 -473 -235 239 -236 239 233 233 c129 129 235 234 236 234 2 0 3 -213 3 -472z m565 288 c15 -10 36 -39 48 -64 20 -44 21 -68 25 -379 l4 -332 108 -3 108 -3 -210 -214 -210 -214 -207 214 -208 214 118 3 117 3 5 312 c2 206 8 325 16 349 16 51 57 97 106 120 50 23 140 20 180 -6z"
               id="path10" style="fill:#ffffff;fill-opacity:1" />
           </g>
-        </svg><span class="d-none d-sm-inline">iklas-stephan.de</span>
+        </svg><span class="d-none d-md-inline">iklas-stephan.de</span>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,6 +34,10 @@
           </li>
           <li class="nav-item ">
             <!--InjectActive--><a id="nav-blog" class="nav-link btn btn-outline-light" href="../blog.html">Blog</a>
+          </li>
+        </li>
+          <li class="nav-item d-none">
+            <a id="nav-lang" class="nav-link btn btn-link ms-sm-5" href=".?lang=en"><strong>de</strong> / en </a>
           </li>
         </ul>
       </div>

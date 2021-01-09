@@ -58,8 +58,18 @@ a:hover {
    background-color:var(--darker) !important;
 }
 
+.dropdown-menu {
 
 
+   border-radius: 0;
+   min-width: 100%;
+   border: 1px var(--bs-secondary) solid;
+}
+
+
+#btnCatDrop1 {
+   height:44px;
+}
 
 
 .form-control, .btn {
@@ -115,6 +125,10 @@ a:hover {
    background-color:var(--dark);
    color:var(--light);
 
+}
+
+.btn-link:hover,.btn-link:focus {
+   color:white !important;
 }
 
 .grid {

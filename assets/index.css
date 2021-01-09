@@ -50,12 +50,12 @@
  /* Different background images */
  .parallax-one::after {
    
-   background-image: url(https://cms.niklas-stephan.de/storage/uploads/2021/01/02/5ff0d251d6d60index_bg_1.webp);
+   background-image: url(https://cms.niklas-stephan.de/storage/uploads/2021/01/09/5ff99eabd6707index_bg_1.jpg);
   
  }
  
  .parallax-two::after {
-   background-image: url(https://cms.niklas-stephan.de/storage/uploads/2021/01/02/5ff0d251cbb2eindex_bg_2.webp);
+   background-image: url(https://cms.niklas-stephan.de/storage/uploads/2021/01/09/5ff99eabb0f31index_bg_2.jpg);
  }
 
  .h-100 {
