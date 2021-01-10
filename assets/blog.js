@@ -1,4 +1,5 @@
 var sortByGroup = document.querySelector('.sort-by-button-group');
+
 sortByGroup.addEventListener('click', function (event) {
   if (!matchesSelector(event.target, '.button')) {
     return;
@@ -8,9 +9,11 @@ sortByGroup.addEventListener('click', function (event) {
 });
 
 var buttonGroups = document.querySelectorAll('.button-group');
+
 for (var i = 0; i < buttonGroups.length; i++) {
   buttonGroups[i].addEventListener('click', onButtonGroupClick);
-}
+};
+
 function onButtonGroupClick(event) {
    if (!matchesSelector(event.target, '.button')) {
      return;
@@ -18,15 +21,14 @@ function onButtonGroupClick(event) {
    var button = event.target;
    button.parentNode.querySelector('.is-checked').classList.remove('is-checked');
    button.classList.add('is-checked');
- }
- function filterFunction() {
+ };
 
+ function filterFunction() {
    var input, filter, ul, li, a, i, txtValue;
    input = document.getElementById('filterInput');
    filter = input.value.toUpperCase();
    ul = document.getElementById("filterContainer");
    li = ul.getElementsByClassName('grid-item');
- 
  
    for (i = 0; i < li.length; i++) {
      a = li[i].getElementsByTagName("a")[0];
@@ -36,15 +38,17 @@ function onButtonGroupClick(event) {
      } else {
        li[i].style.display = "none";
      }
-   }
+   };
    iso.layout();
- }
+ };
+
  var iso = new Isotope('.grid', {
    itemSelector: '.element-item',
    getSortData: {
      name: '.name',
      date: '.date'
    },
+   sortBy: '.date',
    percentPosition: true,
    transitionDuration: '0.8s'
  });
@@ -52,12 +56,12 @@ function onButtonGroupClick(event) {
  function filterTag(tag) { 
   document.getElementById("filterInput").value = tag;
   document.getElementById("filterInput").dispatchEvent(new Event('keyup'));
-}
+};
 
 function filterClear() {
   document.getElementById("filterInput").value = '';
   document.getElementById("filterInput").dispatchEvent(new Event('keyup'));
-}
+};
  
 function clientDate () {
   const currentTimestamp = Date.now();
@@ -85,9 +89,9 @@ function clientDate () {
     document.getElementsByClassName('clientDate')[i].innerHTML = "vor "+difference;
     
   }
-}
+};
 
 
 clientDate();
 
- setTimeout(function () { iso.layout(); }, 750);
+setTimeout(function () { iso.layout(); }, 750);

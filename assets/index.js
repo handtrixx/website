@@ -18,17 +18,31 @@ function PageSpecificFunction() {
   var path = window.location.pathname;
   var page = path.split("/").pop();
   if (page == "index.html" || page == "") {
-    activityWatcher();
+    
   }
 }
 
+function lang(){
+  document.getElementById("langSelector").classList.remove('d-none');
+
+  /*
+  const queryString = window.location.search;
+  var reqLang = "de";
+  
+  if (queryString) {
+    const urlParams = new URLSearchParams(queryString);
+    console.log(urlParams);
+    reqLang = urlParams.get('lang');
+    console.log(reqLang);
+  }
+  */
 
 
-function init () {
-  PageSpecificFunction();
-}
+  
+} 
 
 
 
+activityWatcher();
+lang();
 
-init();
