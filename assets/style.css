@@ -102,6 +102,7 @@ a:hover {
 
 .blog-link-interact:hover, .is-checked {
    border: 1px solid white;
+   
 }
 
 .blog-link, .blog-link:hover {

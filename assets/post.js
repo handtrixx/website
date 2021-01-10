@@ -18,3 +18,21 @@ function socialShare(value) {
    targetUrl = sharerUrl+currentUrl;
    window.open(targetUrl,'_blank');
 }
+
+
+var i;
+var command;
+for (i = 0; i <  document.images.length; i++) {
+   command = 'document.images['+i+'].addEventListener("click", function(){var url = document.images['+i+'].src;url = url.replace("https://assets.niklas-stephan.de/small?src=storage/uploads/","https://cms.niklas-stephan.de/storage/uploads/");window.open(url);});';
+   
+   function text2script(){
+      return Function(command)();
+  }
+  text2script();
+}
+
+
+
+
+
+
