@@ -24,6 +24,12 @@ function PageSpecificFunction() {
 
 function lang(){
   document.getElementById("langSelector").classList.remove('d-none');
+  if (window.location.pathname == "/en.html") {
+    cookieFunction();
+    
+  }
+
+  
 
   /*
   const queryString = window.location.search;

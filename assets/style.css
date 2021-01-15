@@ -6,6 +6,10 @@
    --blue-dark: #243aaa;
    --yellow-dark: #cca938;
 }
+
+.secondary {
+   color:var(--bs-light);
+}
 html {
    background-color:var(--purple);
    max-width: 100%;
@@ -15,19 +19,22 @@ html {
 body {  
    background-color:var(--purple);
    color:var(--light);
-   font-family: var(--bs-font-monospace);
+
    word-break: break-word;
    height:100vh;
    min-height:100vh;
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
    -ms-overflow-style: none;  
-   scrollbar-width: none;  
+   /*scrollbar-width: none;  */
 }
 body::-webkit-scrollbar {
    display: none;
  }
 
+.mono {
+   font-family: var(--bs-font-monospace);
+}
 
 
 
@@ -134,4 +141,18 @@ a:hover {
 
 .grid {
    min-height:600px;
+}
+
+
+.rating-icon {
+   background: var(--purple);
+   color: var(--bs-secondary);
+   border: 2px var(--bs-secondary) solid;
+   width: 50px;
+   height: 50px;
+   overflow: hidden;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   border-radius: 50%;
 }

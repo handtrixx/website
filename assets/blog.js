@@ -23,7 +23,7 @@ function onButtonGroupClick(event) {
    button.classList.add('is-checked');
  };
 
- function filterFunction() {
+function filterFunction() {
    var input, filter, ul, li, a, i, txtValue;
    input = document.getElementById('filterInput');
    filter = input.value.toUpperCase();
@@ -53,7 +53,7 @@ function onButtonGroupClick(event) {
    transitionDuration: '0.8s'
  });
  
- function filterTag(tag) { 
+function filterTag(tag) { 
   document.getElementById("filterInput").value = tag;
   document.getElementById("filterInput").dispatchEvent(new Event('keyup'));
 };
