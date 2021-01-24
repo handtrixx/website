@@ -24,12 +24,20 @@ function PageSpecificFunction() {
 
 function lang(){
   document.getElementById("langSelector").classList.remove('d-none');
-  if (window.location.pathname == "/en.html") {
-    cookieFunction();
-    
+  var userLang = navigator.language || navigator.userLanguage; 
+  userLang = userLang.substring(0, 2);
+  var userUrl = window.location.pathname;
+  var userRef = document.referrer;
+  userRef = userRef.replace("qas.", "");
+  userRef = userRef.replace("www.", "");
+
+  if (userLang != "de" && userUrl != "/en.html" && userRef != "https://niklas-stephan.de/en.html") {
+    window.location.replace("https://niklas-stephan.de/en.html");
   }
 
-  
+  if (window.location.pathname == "/en.html") {
+    cookieFunction(); 
+  }
 
   /*
   const queryString = window.location.search;
@@ -43,8 +51,6 @@ function lang(){
   }
   */
 
-
-  
 } 
 
 

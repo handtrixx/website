@@ -7,9 +7,6 @@
    --yellow-dark: #cca938;
 }
 
-.secondary {
-   color:var(--bs-light);
-}
 html {
    background-color:var(--purple);
    max-width: 100%;
@@ -19,38 +16,34 @@ html {
 body {  
    background-color:var(--purple);
    color:var(--light);
-
    word-break: break-word;
    height:100vh;
    min-height:100vh;
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
    -ms-overflow-style: none;  
-   /*scrollbar-width: none;  */
 }
-body::-webkit-scrollbar {
-   display: none;
- }
-
-.mono {
-   font-family: var(--bs-font-monospace);
-}
-
-
-
 img {
    max-width: 100%;
 }
+
 a {
    color:var(--light);
    text-decoration: none;
 }
+
 a:hover {
    color:var(--light);
    text-decoration: underline;
 }
 
+.secondary {
+   color:var(--bs-light);
+}
 
+.mono {
+   font-family: var(--bs-font-monospace);
+}
 
 .white {
    color:white;
@@ -66,18 +59,14 @@ a:hover {
 }
 
 .dropdown-menu {
-
-
    border-radius: 0;
    min-width: 100%;
    border: 1px var(--bs-secondary) solid;
 }
 
-
 #btnCatDrop1 {
    height:44px;
 }
-
 
 .form-control, .btn {
    border-radius: 0;
@@ -86,8 +75,6 @@ a:hover {
 .form-control {
    border: 2px solid var(--light);
 }
-
-
 
 .navbar-dark .navbar-nav .nav-link {
    color: inherit;
@@ -100,16 +87,15 @@ a:hover {
    color: var(--purple);
 }
 
-
-
 .link:hover {
    text-decoration: underline;
    cursor: pointer;
+
 }
 
 .blog-link-interact:hover, .is-checked {
    border: 1px solid white;
-   
+   transform: scale(1.02);
 }
 
 .blog-link, .blog-link:hover {
@@ -132,7 +118,6 @@ a:hover {
    bottom: 0px;
    background-color:var(--dark);
    color:var(--light);
-
 }
 
 .btn-link:hover,.btn-link:focus {
@@ -142,7 +127,6 @@ a:hover {
 .grid {
    min-height:600px;
 }
-
 
 .rating-icon {
    background: var(--purple);

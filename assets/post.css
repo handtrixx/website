@@ -1,3 +1,25 @@
 img:hover {
    cursor:pointer;
+   transform: scale(1.01);
+}
+
+img {
+   
+   transition: transform .2s; 
+   
+ }
+ 
+ blockquote {
+   border-left: 1px solid white;
+   padding-left: 12px;
+ }
+
+ .alert-warning {
+   color: #ffecb5;
+   background-color: transparent;
+   border-color: #ffecb5;
+}
+
+.alert {
+   border-radius: 0;
 }

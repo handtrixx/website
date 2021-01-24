@@ -80,11 +80,27 @@ function clientDate () {
       if (hours < 1) {
         difference = "wenigen Minuten";
       } else {
-        difference = Math.round(hours)+" Stunden";
+        if (Math.round(hours) < 2) {
+          difference = "einer Stunde"
+        } else {
+          if (Math.round(hours) == 24) {
+            difference = "einem Tag"
+          } else {
+            difference = Math.round(hours)+" Stunden";
+          }
+          
+        }
+        
       }
       
     } else {
-      difference = Math.round(days)+ " Tagen";
+   
+      if ( Math.round(days) < 2) {
+        difference = "einem Tag";
+      } else {
+        difference = Math.round(days)+ " Tagen";
+      }
+      
     }
     document.getElementsByClassName('clientDate')[i].innerHTML = "vor "+difference;
     
