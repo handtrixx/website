@@ -1,10 +1,14 @@
 function blockIE () {
    var ua = window.navigator.userAgent;
    var msie = ua.indexOf("MSIE ");
+   var page = window.location.pathname;
+   page = page.split("/").pop();
 
    if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./))  
    {
-      window.location.replace("https://niklas-stephan.de/404.html");
+      if (page != "404.html") {
+         window.location.replace("/404.html");
+      }
    } 
 }
 
